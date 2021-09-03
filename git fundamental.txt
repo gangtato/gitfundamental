@@ -1,0 +1,52 @@
+Git Fundamental:
+   - Deskripsi
+     perintah perintah yang sering di gunakan untuk mengoperasikan Git
+     contoh:
+     1. Git init
+     2. Git config
+     3. Git status
+     4. Git add
+     5. Git commit 
+     6. Git clone
+     7. Git remote
+     8. Git push
+     9. Git pull
+     10. Git log
+
+1. git init 
+   digunakan untuk menginisialisasi repository
+   memberi tahu folder saat ini akan di jadikan repository
+   kita tidak bisa menggunakan git tanpa menginisialisasinya
+
+2. git config 
+   Konfigurasi email dan username
+   biasanya disamakan dengan akun gitlab / github
+   config global untuk konfigurasi ke server
+   config local untuk konfigurasi local
+   untuk melihat semua konfigurasi yang ada di git bisa menggunakan perintah git config --list
+
+3. git status
+   digunakan untuk mengetahui status file
+   status file secara umum ada 3. Untracked, staging area, modified
+
+4. git add .
+   untuk memasukan file ke staging area
+
+5. git commit
+   untuk mencatat perubahan yang di lakukan
+
+6. git clone
+   digunakan untuk mengcopy repo dari server
+
+7. git remote
+   semacam api untuk berinteraksi dari client dengan server
+
+8. git push 
+   digunakan untuk mengirimkan commit ke server
+
+9. git pull
+   untuk mengambil commit dari server jika ada perubahan di server yang di buat oleh branch lain
+
+10.git log
+   untuk melihat riwayat commit
+   menekan q untuk keluar dari log
