@@ -5,66 +5,292 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas Html</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .belakang {
+            background-color: white;
+            background-size: cover;
+            height: 300px;
+        }
+        #kuning {
+            position:absolute;
+            background-color: #FFC200;
+            height: 300px;
+            width: 350px;
+            border-top-right-radius: 400px; 
+            z-index: 50;
+        }
+        #cokelat {
+            position: absolute;
+            left: 290px;
+            top: 180px;
+            background-color: #3F2116;
+            height: 140px;
+            width: 140px;
+            border-top-right-radius: 140px;
+            z-index: 20;
+        }
+
+        h1{
+            text-transform: uppercase;
+            text-align: left;
+            color: #3F2116;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #biografi {
+            text-transform: uppercase;
+            text-align: left;
+            color: #3F2116;
+            font-family: 'Poppins', sans-serif;
+            opacity: 0.4;
+        }
+
+        .intro{
+            font-weight: 400;
+            font-size: 14px;
+            text-align: left;
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            z-index: 70;
+        }
+
+        span{
+            text-transform: capitalize;
+            font-weight: bold; 
+        }
+
+        .titik{
+            top: 10px;
+            right: 10px;
+            position: absolute;
+            width: 40px;
+            height: 30px;
+        }
+
+        .icon{
+            position: absolute;
+            top: 250px;
+            right: 10px;  
+        }
+
+        #article1 {
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        #article2 {
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        #article3 {
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .new {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .desc{
+            color: #3F2116;
+            font-family: 'Poppins', sans-serif;  
+        }
+
+        .list{
+            color: #3F2116;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            text-align: left; 
+        }
+
+        .tab{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            border: 1px solid #3F2116;
+            text-align: center;
+        }
+
+        .tab-th{
+            border: 1px solid #3F2116;
+            background-color: #FFC200;
+            color: #3F2116;
+        }
+
+        .tab-td{
+            color: #3F2116;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+        }
+
+        .site{
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold; 
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid black;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            border-radius: 10px;
+        }
+
+        input[type="submit"] {
+            width: 105%;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: white;
+            background-color: #FFC200;
+            outline: none;
+            box-shadow: 0px 2px 2px black;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        input[type="submit"]:hover {
+           background-color: #3F2116;
+        }
+
+        .contact {
+            width: 500px;
+            margin: 60px auto;
+            margin-bottom: 100px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            color: #3F2116;
+        }
+
+        .contact h3 {
+           text-align: center;
+        }
+
+        .contact label {
+           text-align: left;
+        }
+
+        .footer {
+            padding: 0;
+            margin: 0;
+            height: 50px;
+            width: 100%;
+            background-color: #3F2116;
+            color: white;
+            text-align: center;
+        }
+
+        .footer p {
+          line-height: 50px;
+          font-family: 'Poppins', sans-serif;
+        }
+  
+    </style>
 </head>
 <body>
-    <h1>My Biografi</h1>
-    <hr/>
-    <h3>Biografi</h3>
-    <hr/>
-    <p>Perkenalkan nama saya aldi l william, saya seorang programmer yang bekerja di perusahaan swasta di jakarta, </p>
-    <p>Saya lulusan S1 Sistem Informasi di Universitas Semarang</p>
-    <p>Pengalaman Kerja di bidang pemrograman adalah 2 tahun</p>
-    <hr/>
-    <h3>Skill</h3>
-    <hr/>
-    <ul>
-        <li>Php</li>
-        <li>Html</li>
-        <li>Css</li>
-        <li>Javascript</li>
-        <li>Docker</li>
-        <li>Vue Js</li>
-        <li>Mysql</li>
-    </ul>
-    <h3>Other Skill</h3>
-    <hr/>
-    <ol>
-        <li>Linux</li>
-        <li>English Reading</li>
-        <li>Fast Typing</li>
-    </ol>
-    <h3>My Family</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Name</th>
-                <th>Address</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Vivi</td>
-                <td>Semarang</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Tasya</td>
-                <td>Jakarta</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="belakang">
+        <div id="kuning">
 
-    <h3>Contact Me</h3>
-    <form action="https://google.com">
-       <label>Email</label>
-       <input name="name" placeholder="email"/>
-       <label>Message</label>
-       <textarea name="message"></textarea>
-       <button type="submit">Send</button>
-    </form>
-    <hr/>
-    <p>Copyright 2020 Aldi L William</p>
+        </div>
+        <div id="cokelat">
+    
+        </div>
+        <div style="position: relative; left: 37%; width: 50%;">
+            <h1>My Biografi</h1>
+            <h3 id="biografi">Biografi</h3>
+            <p class="intro">Perkenalkan nama saya <span>aldi l william</span>,</p>
+            <p class="intro">saya seorang programmer yang bekerja di perusahaan swasta di jakarta,</p>
+            <p class="intro">Saya lulusan S1 Sistem Informasi di Universitas Semarang</p>
+            <p class="intro">Pengalaman Kerja di bidang pemrograman adalah 2 tahun</p>
+        </div>
+        <img class="titik" src="1x/Asset 4roc.png"/>
+        <div class="icon">
+            <img style="position: absolute; right: 0; bottom:50px;" src="1x/Asset 1roc.png"/>
+            <img style="position: absolute; right: 40px; bottom:50px;" src="1x/Asset 2roc.png"/>
+            <img style="position: absolute; right: 80px; bottom:50px;" src="1x/Asset 3roc.png"/>
+            <h3 class="site">www.biografi-aldi-william.com</h3>
+        </div>
+    </div>
+    <div class="new">
+        <article id="article1">
+          <h3 class="desc">Skill</h3>
+          <ol class="list">
+            <li>Php</li>
+            <li>Html</li>
+            <li>Css</li>
+            <li>Javascript</li>
+            <li>Docker</li>
+            <li>Vue Js</li>
+            <li>Mysql</li>
+          </ol>
+        </article>
+        <article id="article2">
+          <h3 class="desc">Other Skill</h3>
+          <ol class="list">
+            <li>Linux</li>
+            <li>English Reading</li>
+            <li>Fast Typing</li>
+          </ol>
+        </article>
+        <article id="article3">
+          <h3 class="desc">My Family</h3>
+          <table width="90%">
+            <thead>
+                <tr>
+                    <th class="tab-th">No</th>
+                    <th class="tab-th">Name</th>
+                    <th class="tab-th">Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tab-td">1</td>
+                    <td class="tab-td">Vivi</td>
+                    <td class="tab-td">Semarang</td>
+                </tr>
+                <tr>
+                    <td class="tab-td">2</td>
+                    <td class="tab-td">Tasya</td>
+                    <td class="tab-td">Jakarta</td>
+                </tr>
+            </tbody>
+        </table>
+        </article>
+    </div>
+    <section class="contact">
+        <h1>My Contact</h1>
+        <div class="column">
+          <form action="https://google.com">
+            <label for="fname">Email</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your email.."
+            />
+            <label for="subject">Message</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 170px;"
+            ></textarea>
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+    </section>   
+    <div class="footer">
+       <p>&copy; 2021 Aldi L William, All rights reserved.</p>
+    </div>
 </body>
 </html>
